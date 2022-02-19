@@ -1,0 +1,1 @@
+select title from book_catalogue where isbn_no in (select isbn_no from book_authors where author_fname='Joh Paul' and author_lname='Mueller')

@@ -1,0 +1,1 @@
+select managers.name from managers, teams where teams.name='All Stars' and managers.team_id=teams.team_id

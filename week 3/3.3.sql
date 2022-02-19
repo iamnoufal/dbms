@@ -1,0 +1,1 @@
+select name from teams where team_id not in (select team_id from players where jersey_no=74)

@@ -1,0 +1,1 @@
+select book_catalogue.title, (select count(book_copies.isbn_no) from book_copies where book_copies.isbn_no = book_catalogue.isbn_no) from book_catalogue where book_catalogue.title like '%Database%'

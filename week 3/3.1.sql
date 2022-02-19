@@ -1,0 +1,1 @@
+select matches.match_num, referees.name from matches, referees where matches.match_date='2020-05-11' and referee_id in (select referee from match_referees where match_referees.match_num in (select match_num from matches where match_date='2020-05-11'))
